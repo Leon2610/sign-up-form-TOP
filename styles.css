@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+
+@font-face {
+  font-family: "norse-bold";
+  src: url(font/Norse-Bold.otf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  display: flex;
+  height: 100vh;
+}
+
+
+
+main .img-container .logo-container {
+  background: url(img/simon-zhu--ZajbDegPQA-unsplash.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 40vw;
+}
+
+main .img-container .logo-container .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 25%;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-family: norse-bold;
+  padding: 2rem;
+  font-size: 3rem;
+}
+
+main .img-container .logo-container p {
+  text-align: center;
+  color: white;
+  font-size: .8rem;
+  margin-top: 72vh;
+
+  
+}
+
+main .img-container .logo-container .logo img {
+  width: 6rem;
+}
+
+main .rigth-container {
+  background: #f9fafb;
+  width: 60vw;
+  font-family: "Roboto", sans-serif;
+}
+
+main .rigth-container .text-container {
+  max-width: 43.4375rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-top: 6rem;
+  padding: 2rem;
+}
+
+main .rigth-container form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+  background: white;
+  padding: 2rem;
+  box-shadow: 0px 5px 10px 1px rgba(0, 0, 0, 0.1);
+}
+
+main .rigth-container form h3 {
+  margin-bottom: 1rem;
+  font-weight: 400;
+}
+
+main .rigth-container form .inputs {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 2rem;
+  row-gap: 1rem;
+}
+
+main .rigth-container form .input {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+}
+
+main .rigth-container form .input label {
+  font-weight: 300;
+  letter-spacing: 0.125rem;
+}
+
+main .rigth-container form .input input {
+  border: 1px solid #e5e7eb;
+  height: 1.5625rem;
+}
+
+main .rigth-container form .input input:focus {
+  border: 2px solid blue;
+}
+
+main .rigth-container form #msg {
+  color: red;
+}
+
+.success {
+  color: green !important;
+}
+
+main .rigth-container button {
+  background-color: #213347;
+  border: none;
+  border-radius: 0.5rem;
+  color: white;
+  padding: 1.2rem;
+  margin: 2rem 0.1rem;
+  font-size: 1.1rem;
+  max-width: 15.625rem;
+  cursor: pointer;
+}
+
+main .rigth-container button:hover {
+  background-color: #33475e;
+  transform: scale(1.1);
+  transition: all 0.3s ease-out;
+}
+
+main .rigth-container .log-in {
+  margin: 2rem;
+}
+
+main .rigth-container p:last-child span {
+  color: #213347;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+main .rigth-container p:last-child span:hover {
+  color: #33475e;
+}
+
+@media (max-width: 800px) {
+  main .img-container .logo-container {
+    width: 100vw;
+    position: relative;
+  }
+  main .img-container .logo-container .logo {
+    top: 0;
+    font-size: 1.5rem;
+  }
+
+  main .img-container .logo-container .logo img {
+    width: 3rem;
+  }
+  main .rigth-container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.1);
+    width: 100vw;
+    align-items: center;
+    bottom: 0;
+  }
+
+  main .rigth-container .text-container {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    max-width: 43.4375rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-top: 0;
+    padding: 2rem;
+    text-align: center;
+  }
+
+  main .rigth-container form {
+    width: 80%;
+    background: #10161da1;
+    color: white;
+    margin-top: 0;
+    box-shadow: 0px 0px 12px 1px orange;
+  }
+
+  main .rigth-container form .inputs {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 2;
+    row-gap: 2;
+  }
+
+  main .rigth-container form .input {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+  }
+
+  main .rigth-container form h3 {
+    text-align: center;
+  }
+
+  main .rigth-container p:last-child {
+    color: white;
+  }
+
+  main .rigth-container p:last-child span {
+    color: orange;
+  }
+  main .rigth-container p:last-child span:hover {
+    color: rgb(247, 107, 27);
+  }
+
+  main .rigth-container button {
+    margin: 2rem auto;
+  }
+}

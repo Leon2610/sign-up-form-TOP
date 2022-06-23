@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <div class="img-container">
+        <div class="logo-container">
+          <div class="logo">
+            <img src="img/odin-lined.png" alt="logo-odin" />
+            <h1>ODIN</h1>
+          </div>
+          <p class="img-credits">Photo by Simon Zhu on Unsplash</p>
+        </div>
+      </div>
+      <div class="rigth-container">
+        <div class="text-container">
+          <p>
+            This is not a real online service! You know you need something like
+            this in your life to help you realize your deepest dreams.
+          </p>
+          <p>Sign up <i>now</i> to get started</p>
+          <br />
+          <p>You <i>know</i> you want to.</p>
+        </div>
+        <form action="" id="form">
+          <h3>Let's do this!</h3>
+          <div class="inputs">
+            <div class="input">
+              <label for="first-name">First Name</label>
+              <input type="text" id="first-name" required />
+            </div>
+
+            <div class="input">
+              <label for="last-name">Last Name</label>
+              <input type="text" id="last-name" required />
+            </div>
+
+            <div class="input">
+              <label for="email">Email</label>
+              <input type="email" id="email" required />
+            </div>
+
+            <div class="input">
+              <label for="phone-number">Phone Number</label>
+              <input type="text" id="phone-number" />
+            </div>
+
+            <div class="input">
+              <label for="pwd">Password</label>
+              <input type="password" id="pwd" class="error" required />
+            </div>
+
+            <div class="input">
+              <label for="pwd-confirm">Confirm Password</label>
+              <input type="password" id="pwd-confirm" class="error" required />
+            </div>
+          </div>
+
+          <button type="submit" id="btn">Create Account</button>
+          <div id="msg" class="error"></div>
+        </form>
+
+        <p class="log-in">Already have an account? <span>Log in</span></p>
+      </div>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
